@@ -13,5 +13,7 @@ networks:
   nginx-ls_default:
   enable_ipv6: true
   config:
+    - subnet": 192.168.48.0/20
+      gateway: 192.168.48.1
     - subnet: 240x:zzzz:xxxx:yyyy:1000::/80
       gateway: 240x:zzzz:xxxx:yyyy:1000::1
