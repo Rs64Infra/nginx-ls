@@ -9,10 +9,3 @@ services:
       - "8083:1935"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-  
-  bore:
-    image: ekzhang/bore:0.4.1
-    container_name: bore-use-nginx-ls
-    restart: unless-stopped
-    networks: host
-    command: bore local 8083 -to ${TO} -s ${SECRET}
