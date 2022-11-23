@@ -11,7 +11,6 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf
 networks:
   nginx-ls_default:
-  enable_ipv6: true
-  config:
+  enable_ipv6:
     - subnet: 240x:zzzz:xxxx:yyyy:1000::/80
       gateway: 240x:zzzz:xxxx:yyyy:1000::1
