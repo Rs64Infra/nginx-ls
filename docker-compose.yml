@@ -12,6 +12,8 @@ services:
 networks:
   nginx-ls_default:
   enable_ipv6: true
+  ipam:
+  driver: default
   config:
     - subnet": 192.168.48.0/20
       gateway: 192.168.48.1
